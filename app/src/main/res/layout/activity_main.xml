@@ -82,11 +82,12 @@
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navi_view"
+        android:layout_width="200dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:text="@string/todo"
-        android:textSize="30sp"
-        android:background="#FFF"/>
+        app:menu="@menu/navi_menu"
+        app:headerLayout="@layout/navi_header"/>
+
 </android.support.v4.widget.DrawerLayout>
