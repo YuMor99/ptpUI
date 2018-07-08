@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setHomeAsUpIndicator(R.drawable.menu);
         }
 
-        ImageButton settings = (ImageButton) findViewById(R.id.settings);
+        ImageButton edit_addr = (ImageButton) findViewById(R.id.edit);
         final EditText edit = new EditText(MainActivity.this);
-        settings.setOnClickListener(new View.OnClickListener(){
+        edit_addr.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-                dialog.setMessage("Please input the address of vedio streaming:");
+                dialog.setMessage("Please input the address of video streaming:");
                 dialog.setView(edit);
                 dialog.setCancelable(true);
                 dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+//用Vitamio库获取视频流
 //        mVideoView = (VideoView) findViewById(R.id.vitamio_videoView);
 //        //path = "rtmp/http地址";
 //            /*options = new HashMap<>();
