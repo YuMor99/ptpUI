@@ -1,12 +1,12 @@
 # ptpUI
 ## 页面一
 - 活动：MainActicity
-- 布局：activity——main.xml
+- 布局：activity_main.xml
 - 控件id：
-  - `toolbar`：左边是个滑动菜单（菜单内部UI还没写）
+  - `toolbar`：左边是个滑动菜单
   - `vitamio_videoView`：用Vitamio库获取视频流
   - `btn_take_photo`：拍照
-  - `settings`：输入视频流地址
+  - `edit`：输入视频流地址
   - `photo`：查看相册
 
 ## 页面二
